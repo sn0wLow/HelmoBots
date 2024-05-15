@@ -49,11 +49,9 @@ namespace HelmoBots
 
             if (random.Next(4) < 3)
             {
-                // If bot died last round or its the first round of either half
-                // remove the default pistol and replace it with a USP-S
-                // otherwise do not change it since the bot could've picked up the default pistol
-                // Also apparently sometimes after using mp_restartgame 1 RoundsPlayedThisPhase
-                // doesnt update so TotalRoundsPlayed has to be checked as a backup
+                // If the Bot died last round or it's the first round of either half,
+                // remove the default pistol and replace it with a USP-S.
+                // Otherwise, do not change it since the default pistol might have been picked up.
                 if (!player.PawnIsAlive || IsPistolRound())
                 {
 
@@ -252,6 +250,8 @@ namespace HelmoBots
 
         public static bool IsPistolRound()
         {
+            // Apparently, sometimes after using mp_restartgame 1, 'RoundsPlayedThisPhase'
+            // doesn't update, so 'TotalRoundsPlayed' has to be checked as a backup.
             var rules = GetGameRules();
             return rules?.RoundsPlayedThisPhase == 0 || rules?.TotalRoundsPlayed == 0;
         }
