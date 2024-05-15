@@ -105,18 +105,18 @@ namespace HelmoBots
             {
                 if (player.IsCT())
                 {
-                    if (random.Next(5) == 0)
-                    {
-                        if (account >= 400)
-                        {
-                            BuyDefuser(player, itemService, moneyService);
-                        }
-                    }
-                    else
+                    if (HasAnyCTADefuseKit())
                     {
                         if (account >= 650)
                         {
                             BuyKevlarNoHelmet(player, moneyService);
+                        }
+                    }
+                    else
+                    {
+                        if (account >= 400)
+                        {
+                            BuyDefuser(player, itemService, moneyService);
                         }
                     }
                 }
