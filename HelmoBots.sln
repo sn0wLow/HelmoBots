@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34825.169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelmoBots", "HelmoBots.csproj", "{4BFC1C5C-53B4-4BCA-B184-4AE70B23091B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BFC1C5C-53B4-4BCA-B184-4AE70B23091B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BFC1C5C-53B4-4BCA-B184-4AE70B23091B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BFC1C5C-53B4-4BCA-B184-4AE70B23091B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BFC1C5C-53B4-4BCA-B184-4AE70B23091B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB3A5ABD-1D40-4E6D-87D6-C301B7AA6740}
+	EndGlobalSection
+EndGlobal
