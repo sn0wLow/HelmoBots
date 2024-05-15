@@ -144,8 +144,7 @@ namespace HelmoBots
         {
             var player = @event.Userid;
 
-            //if (player is null || !player.IsValidPlayer(true) || !player.IsBot)
-            if (player is null || !player.IsValidPlayer(true))
+            if (player is null || !player.IsValidPlayer(true) || !player.IsBot)
             {
                 return HookResult.Continue;
             }
